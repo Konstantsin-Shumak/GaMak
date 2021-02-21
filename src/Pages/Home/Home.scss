@@ -1,0 +1,45 @@
+@import "../../Assets/Style/variables.scss";
+
+/*          MainPage            */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    flex-grow: 1;
+
+    .info {
+        padding: 0 4rem;
+        color: $main_font_color;
+        margin-bottom: 20px;
+
+        .info__header {
+            font-size: $font_size*3;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .main__background_img {
+        width: 50%;
+    }
+}
+
+/*          mobile          */
+@media screen and (max-width: 750px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+
+        .info {
+            padding: 10px;
+
+            .info__header {
+                font-size: $font_size*1.5;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

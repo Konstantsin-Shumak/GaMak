@@ -1,0 +1,12 @@
+@import "../../Assets/Style/variables.scss";
+
+.valid-input {
+    height: 2rem;
+    border-radius: $border_radius;
+    padding: 0 10px;
+    outline: none;
+}
+.valid-input.invalid {
+    border: 2px solid $error;
+    box-sizing: border-box;
+}

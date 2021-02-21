@@ -1,0 +1,133 @@
+/*          COLORS          */
+/*          Sizes          */
+.popup_gray_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(1, 1, 1, 0.75);
+}
+
+.popup_window {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 60%;
+  height: 60vh;
+  top: 20%;
+  left: 20%;
+  z-index: 2;
+}
+
+.popup_window .popup_window__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  background: #fff;
+  width: 100%;
+}
+
+.popup_window .popup_window__block__left_img {
+  display: block;
+  width: 60%;
+  border-radius: 15px;
+}
+
+.popup_window .popup_window__block__right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.popup_window .popup_window__block__right_side__form_block {
+  border-radius: 15px;
+  background: #005ba4;
+  color: #fff;
+  padding-top: 2rem;
+  /*          FORM            */
+}
+
+.popup_window .popup_window__block__right_side__form_block .form_block__header {
+  text-align: center;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__checkbox_remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__checkbox_remember label {
+  margin-left: 10px;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__error {
+  font-size: small;
+  color: #e8525d;
+  margin-left: 0.5rem;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__forgot_password {
+  margin: 1rem 0;
+  color: #ffcb26;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__forgot_password:hover {
+  color: #ffee00;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__button {
+  height: 2rem;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: none;
+  background: #ffcb26;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup_window .popup_window__block__right_side__form_block .form .form__button:hover {
+  background: #ffee00;
+}
+
+/*          Mobile          */
+@media screen and (max-width: 980px) {
+  .popup_window {
+    width: 100%;
+    left: 0;
+  }
+  .popup_window .popup_window__block__left_img {
+    display: none;
+  }
+  .popup_window .popup_window__block__right_side {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=WindowForm.css.map */

@@ -1,0 +1,57 @@
+@import "../../Assets/Style/variables.scss";
+
+.task_creator {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background: $task_creator;
+    border-radius: 15px;
+
+    .task_creator__icon_status {
+        display: flex;
+        padding: 0 15px;
+
+        .task_creator__icon_status__img {
+            width: 25px;
+        }
+    }
+
+    .task_creator__input_text {
+        width: 90%;
+        outline: none;
+        padding: 0 1rem;
+        background: $task_creator;
+        color: #fff;
+        box-sizing: border-box;
+        border-radius: $border-radius;
+    }
+
+    .task_creator__input_text::placeholder {
+        color: whitesmoke;
+    }
+
+    .task_creator__buttons {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .task_creator__buttons__add_task {
+            margin-left: 15px;
+        }
+
+        .task_creator__buttons__add_task,
+        .task_creator__buttons__add_date {
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .task_creator__buttons__add_task__img,
+        .task_creator__buttons__add_date__img {
+            width: 20px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../Assets/Style/variables.scss";
+
+.task_block_item {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: $subtask_color;
+    border-radius: $border-radius;
+    margin-bottom: 3px;
+    cursor: pointer;
+    color: #fff;
+
+    .task_block_item__icon_status {
+        display: flex;
+        padding: 0 15px;
+
+        .task_block_item__icon_status__img {
+            width: 25px;
+        }
+    }
+
+    .task_block__clicked_place {
+        width: 100%;
+        .task_block__clicked_place__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+
+            .task_block__clicked_place__info__additonal_info {
+                display: flex;
+
+                .number_subtask {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+}
+.task_block_item.active{
+    background: $subtask_color*0.6;
+}

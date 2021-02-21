@@ -1,0 +1,85 @@
+/*          COLORS          */
+/*          Sizes          */
+.task_creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background: #83CDF2;
+  border-radius: 15px;
+}
+
+.task_creator .task_creator__icon_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+}
+
+.task_creator .task_creator__icon_status .task_creator__icon_status__img {
+  width: 25px;
+}
+
+.task_creator .task_creator__input_text {
+  width: 90%;
+  outline: none;
+  padding: 0 1rem;
+  background: #83CDF2;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.task_creator .task_creator__input_text::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+
+.task_creator .task_creator__input_text:-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+.task_creator .task_creator__input_text::-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+.task_creator .task_creator__input_text::placeholder {
+  color: whitesmoke;
+}
+
+.task_creator .task_creator__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.task_creator .task_creator__buttons .task_creator__buttons__add_task {
+  margin-left: 15px;
+}
+
+.task_creator .task_creator__buttons .task_creator__buttons__add_task,
+.task_creator .task_creator__buttons .task_creator__buttons__add_date {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.task_creator .task_creator__buttons .task_creator__buttons__add_task__img,
+.task_creator .task_creator__buttons .task_creator__buttons__add_date__img {
+  width: 20px;
+}
+/*# sourceMappingURL=TaskCreator.css.map */

@@ -1,0 +1,24 @@
+header {
+    box-sizing: border-box;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2rem 20px 2rem;
+
+    .header__logo__img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        padding: 1rem;
+        height: 100px;
+
+        .header__logo__img {
+            width: 40%;
+        }
+    }
+}

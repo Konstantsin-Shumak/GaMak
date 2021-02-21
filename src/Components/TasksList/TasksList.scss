@@ -1,0 +1,35 @@
+@import "../../Assets/Style/variables.scss";
+
+.tasks_content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 90%;
+    height: 100%;
+    background: $task_background;
+    box-sizing: border-box;
+    overflow: auto;
+
+    .tasks_content__main_block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex-grow: 1;
+        padding: 0 10px;
+
+        .tasks_content__main_block__header {
+            font-size: $font-size * 1.2;
+            padding: 1rem;
+            cursor: default;
+        }
+
+        .tasks_content__main_block__tasks_block {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+    }
+}

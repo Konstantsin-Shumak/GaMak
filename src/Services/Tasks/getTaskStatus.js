@@ -1,0 +1,1 @@
+export const getTaskStatus = (task) => task.done;

@@ -1,0 +1,36 @@
+@import "./Assets/Style/variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: $font_size;
+    text-decoration: none;
+    list-style: none;
+    font-family:
+        Constantia, sans-serif;
+
+    img {
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.527);
+    border-radius: 15px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+    

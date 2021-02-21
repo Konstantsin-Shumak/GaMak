@@ -1,0 +1,35 @@
+@import "../../Assets/Style/variables.scss";
+
+.subtask {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px gray solid;
+    .subtask__icon_status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        margin: 0 10px;
+        .subtask_icon_status__img {
+            width: 20px;
+        }
+    }
+
+    .subtask__text {
+        background: none;
+        outline: none;
+        font-size: 0.9rem;
+        resize: none;
+        height: 1.1rem;
+    }
+    .subtask__delete_button {
+        cursor: pointer;
+        .subtask__delete_button__img{
+            width: 13px;
+        }
+    }
+}
+.subtask:hover {
+    background: $right_task_info_background * 0.9;
+}

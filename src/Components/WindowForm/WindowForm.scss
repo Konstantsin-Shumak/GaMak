@@ -1,0 +1,114 @@
+@import "../../Assets/Style/variables.scss";
+
+.popup_gray_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(1, 1, 1, 0.75);
+}
+
+.popup_window {
+    align-items: center;
+    position: absolute;
+    width: 60%;
+    height: 60vh;
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+
+    .popup_window__block {
+        display: flex;
+        border-radius: $border_radius;
+        background: $background_color;
+        width: 100%;
+    }
+
+    .popup_window__block__left_img {
+        display: block;
+        width: 60%;
+        border-radius: $border_radius;
+    }
+
+    .popup_window__block__right_side {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .popup_window__block__right_side__form_block {
+        border-radius: $border_radius;
+        background: $form_background;
+        color: $form_font_color;
+        padding-top: 2rem;
+
+        .form_block__header {
+            text-align: center;
+        }
+
+        /*          FORM            */
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+
+            .form__checkbox_remember {
+                display: flex;
+                align-items: center;
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+
+            .form__error {
+                font-size: small;
+                color: $error;
+                margin-left: 0.5rem;
+            }
+
+            .form__forgot_password {
+                margin: 1rem 0;
+                color: $form_link_main_color;
+            }
+
+            .form__forgot_password:hover {
+                color: $form_link_hover_color;
+            }
+
+            .form__button {
+                height: 2rem;
+                padding: 0 10px;
+                margin: 0 auto;
+                outline: none;
+                background: $form_link_main_color;
+                border-radius: $border_radius;
+                cursor: pointer;
+            }
+
+            .form__button:hover {
+                background: $form_link_hover_color;
+            }
+        }
+    }
+}
+
+/*          Mobile          */
+@media screen and (max-width: 980px) {
+    .popup_window {
+        width: 100%;
+        left: 0;
+
+        .popup_window__block__left_img {
+            display: none;
+        }
+
+        .popup_window__block__right_side {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+/*          COLORS          */
+/*          Sizes          */
+.left_filter_panel {
+  width: 250px;
+}
+
+.left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: default;
+}
+
+.left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block .left_filter_panel__menu__block__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block .left_filter_panel__menu__block__li__img {
+  width: 25px;
+  margin: 0 20px;
+}
+
+.left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block.active {
+  background: aliceblue;
+}
+
+.left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block.active .left_filter_panel__menu__block__li:after {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 3px;
+  background-color: blue;
+  position: absolute;
+}
+
+.left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block__number_of_the_task {
+  width: 25px;
+  opacity: 0.6;
+}
+
+.left_filter_panel .left_filter_panel__menu__block:hover {
+  background: #e4ecf2;
+}
+
+@media screen and (max-width: 1164px) {
+  .left_filter_panel {
+    width: 60px;
+  }
+  .left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block__li__text {
+    display: none;
+  }
+  .left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block__li__text .left_filter_panel__menu__block__li__img {
+    margin: 0 10px;
+  }
+  .left_filter_panel .left_filter_panel__menu .left_filter_panel__menu__block__number_of_the_task {
+    display: none;
+  }
+}
+/*# sourceMappingURL=LeftFilterPanel.css.map */

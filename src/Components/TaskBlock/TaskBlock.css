@@ -1,0 +1,61 @@
+/*          COLORS          */
+/*          Sizes          */
+.task_block_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: #426A98;
+  border-radius: 15px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.task_block_item .task_block_item__icon_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+}
+
+.task_block_item .task_block_item__icon_status .task_block_item__icon_status__img {
+  width: 25px;
+}
+
+.task_block_item .task_block__clicked_place {
+  width: 100%;
+}
+
+.task_block_item .task_block__clicked_place .task_block__clicked_place__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.task_block_item .task_block__clicked_place .task_block__clicked_place__info .task_block__clicked_place__info__additonal_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.task_block_item .task_block__clicked_place .task_block__clicked_place__info .task_block__clicked_place__info__additonal_info .number_subtask {
+  margin-right: 1rem;
+}
+
+.task_block_item.active {
+  background: #28405b;
+}
+/*# sourceMappingURL=TaskBlock.css.map */

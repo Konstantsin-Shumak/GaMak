@@ -1,0 +1,90 @@
+/*          COLORS          */
+/*          Sizes          */
+.right_info_panel {
+  width: 300px;
+  height: 100%;
+  background: aliceblue;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px black solid;
+  padding: 1rem;
+}
+
+.right_info_panel .right_info_panel__task_and_subtasks .right_info_panel__task_and_subtasks__task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.right_info_panel .right_info_panel__task_and_subtasks .right_info_panel__task_and_subtasks__task .right_info_panel__task_and_subtasks__task__status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.right_info_panel .right_info_panel__task_and_subtasks .right_info_panel__task_and_subtasks__task .right_info_panel__task_and_subtasks__task__status .right_info_panel__task_and_subtasks__task__status__img {
+  width: 25px;
+}
+
+.right_info_panel .right_info_panel__task_and_subtasks .right_info_panel__task_and_subtasks__task .right_info_panel__task_and_subtasks__task__text {
+  background: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  resize: none;
+}
+
+.right_info_panel .right_info_panel__task_and_subtasks .right_info_panel__task_and_subtasks__task .right_info_panel__task_and_subtasks__task__delete_button {
+  cursor: pointer;
+  width: 25px;
+}
+
+.right_info_panel .right_info_panel__task_and_subtasks .right_info_panel__task_and_subtasks__task .right_info_panel__task_and_subtasks__task__delete_button .right_info_panel__task_and_subtasks__task__delete_button_img {
+  width: 25px;
+}
+
+.right_info_panel .right_info_panel__deadline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right_info_panel .right_info_panel__deadline .right_info_panel__deadline__clear_deadline {
+  margin-left: 10px;
+  background: none;
+  border: 1px gray solid opacity 0.5;
+}
+
+@media screen and (max-width: 750px) {
+  .right_info_panel {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    bottom: 55px;
+    margin-top: 1rem;
+    width: 300px;
+    height: auto;
+    background: aliceblue;
+    overflow: auto;
+  }
+}
+/*# sourceMappingURL=RightTaskInfoPanel.css.map */

@@ -1,0 +1,1 @@
+export const getTaskId = (task) => task.id;

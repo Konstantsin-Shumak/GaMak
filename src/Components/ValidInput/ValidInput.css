@@ -1,0 +1,15 @@
+/*          COLORS          */
+/*          Sizes          */
+.valid-input {
+  height: 2rem;
+  border-radius: 15px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.valid-input.invalid {
+  border: 2px solid #e8525d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=ValidInput.css.map */
