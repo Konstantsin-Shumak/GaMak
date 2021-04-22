@@ -23,8 +23,8 @@ export const loginAsync = (username, password, remember) => {
                 sessionStorage.setItem(UserId, json.user.id)
             }
         })
-        .catch(error => {
-            alert(error.message);
+        .catch(_ => {
+            alert("Неверный логин или пароль");
             logout();
         });
 }
