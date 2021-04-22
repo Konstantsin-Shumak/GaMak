@@ -14,7 +14,6 @@ import {
 export const loginAsync = (username, password, remember) => {
     return fetchLoginAsync(username, password)
         .then(response => response.json())
-        .catch(error => alert(error()))
         .then(json => {
             if (remember) {
                 localStorage.setItem(JwtForUserStorageKey, json.jwt);
