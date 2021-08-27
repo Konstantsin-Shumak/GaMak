@@ -77,7 +77,7 @@ export const MainMenu = (props) => {
                                     setNavigatorStatus("");
                                     props.whatFormOpen(1)
                                 }}>
-                                Регисрация
+                                Регистрация
                             </button>
                         </li>
                     </>
