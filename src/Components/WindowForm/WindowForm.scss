@@ -80,6 +80,11 @@
                 color: $form_link_hover_color;
             }
 
+            .form__loading {
+                width: 30px;
+                margin: 0 auto;
+            }
+            
             .form__button {
                 height: 2rem;
                 padding: 0 10px;

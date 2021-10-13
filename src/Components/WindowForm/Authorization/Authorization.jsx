@@ -5,9 +5,11 @@ import { ValidInput } from '../../ValidInput/ValidInput';
 import { validateLogin } from '../../../Services/Validation/validateLogin';
 import { validatePassword } from '../../../Services/Validation/validatePassword';
 import { loginAsync } from '../../../Services/Login/loginAsync';
+import loadingGif from '../../../Assets/Images/loading.gif';
 
 export const Authorization = (props) => {
     const [login, setLogin] = useState();
+    const [isLoading, setIsLoading] = useState(false);
     const [password, setPassword] = useState();
     const [loginError, setLoginErrors] = useState();
     const [passwordError, setPasswordErrors] = useState();
@@ -30,10 +32,13 @@ export const Authorization = (props) => {
         if (loginError || passwordError || login === undefined || password === undefined) {
             return;
         }
-
+        setIsLoading(true);
         loginAsync(login, password, rememberMe)
-            .then(() => history.replace(HomeRoute))
-            .then(onClose)
+            .then(history.replace(HomeRoute))
+            .then(()=>{
+                onClose();
+                setIsLoading(false);
+            })
     }, [login, loginError, password, passwordError, history, rememberMe, onClose]);
 
     return (
@@ -62,7 +67,12 @@ export const Authorization = (props) => {
             </div>
             <a className="form__forgot_password" href="/*">Забыли пароль?</a>
 
-            <input className="form__button" type="button" value="Войти" onClick={onLogin} />
+            {isLoading ?
+                <img src={loadingGif} alt="loading..." 
+                className="form__loading"/>
+                :
+                <input className="form__button" type="button" value="Войти" onClick={onLogin} />
+            }
         </form>
     );
 }

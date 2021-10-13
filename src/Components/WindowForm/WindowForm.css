@@ -103,6 +103,11 @@
   color: #ffee00;
 }
 
+.popup_window .popup_window__block__right_side__form_block .form .form__loading {
+  width: 30px;
+  margin: 0 auto;
+}
+
 .popup_window .popup_window__block__right_side__form_block .form .form__button {
   height: 2rem;
   padding: 0 10px;
