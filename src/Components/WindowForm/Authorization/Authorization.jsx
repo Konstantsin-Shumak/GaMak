@@ -34,11 +34,9 @@ export const Authorization = (props) => {
         }
         setIsLoading(true);
         loginAsync(login, password, rememberMe)
-            .then(history.replace(HomeRoute))
-            .then(()=>{
-                onClose();
-                setIsLoading(false);
-            })
+            .then(() => history.replace(HomeRoute))
+            .then(onClose)
+            .finally(() => setIsLoading(false))
     }, [login, loginError, password, passwordError, history, rememberMe, onClose]);
 
     return (
@@ -68,8 +66,8 @@ export const Authorization = (props) => {
             <a className="form__forgot_password" href="/*">Забыли пароль?</a>
 
             {isLoading ?
-                <img src={loadingGif} alt="loading..." 
-                className="form__loading"/>
+                <img src={loadingGif} alt="loading..."
+                    className="form__loading" />
                 :
                 <input className="form__button" type="button" value="Войти" onClick={onLogin} />
             }
